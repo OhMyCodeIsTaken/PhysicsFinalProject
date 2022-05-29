@@ -26,7 +26,6 @@ public class CustomPhysics : MonoBehaviour
 
                     if (CollisionCheck(collider, otherCollider))
                     {
-                        Debug.Log(collider + " & " + otherCollider + " have collided!");
                         collider.OnCollisionWith?.Invoke(otherCollider);
                     }
                 }

@@ -2253,7 +2253,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 963865013}
   _whiteBall: {fileID: 1648189932}
-  _mainCamera: {fileID: 519420031}
 --- !u!1 &1003556265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,35 +3188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _indicator: {fileID: 1002912687}
-  _maxHitPower: 600
+  _maxHitPower: 80
   _currentHitPower: 0
-  _proccessedHitPower: 0
+  _maxHoldTime: 1
+  _elapsedTime: 0
   _rigidBody: {fileID: 1648189936}
   _mainCamera: {fileID: 519420031}
-  _curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 2.002659
-      value: 0.99999887
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!212 &1648189933
 SpriteRenderer:
   m_ObjectHideFlags: 0

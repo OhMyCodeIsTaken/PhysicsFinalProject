@@ -25,6 +25,6 @@ public class TestMath : MonoBehaviour
     {
         double angle = Math.Acos(_adj / _hyp) * 180 / Math.PI;
 
-        Debug.Log(angle);
+        
     }
 }

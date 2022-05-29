@@ -7,17 +7,15 @@ public class HitIndicator : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
     [SerializeField] private WhiteBall _whiteBall;
-    [SerializeField] private Camera _mainCamera;
 
-    // Start is called before the first frame update
     void Start()
     {
-        _slider.maxValue = _whiteBall.MaxHitPower;
+        _slider.maxValue = _whiteBall.MaxHoldTime;
     }
 
     public void FillSlider(float value)
     {
-        _slider.value = value / _slider.maxValue;
+        _slider.value = value;
     }
 
     public void ToggleSliderState(bool state)

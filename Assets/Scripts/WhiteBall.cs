@@ -6,10 +6,12 @@ public class WhiteBall : MonoBehaviour
 {
     [SerializeField] private HitIndicator _indicator;
     [SerializeField] private int _maxHitPower;
-    [SerializeField] private int _currentHitPower = 0;
+    [SerializeField] private float _currentHitPower = 0;
     [SerializeField] private float _proccessedHitPower;
 
-    //[SerializeField] private Rigidbody2D _rigidBody;
+    [SerializeField] private float _maxHoldTime;
+    [SerializeField] private float _elapsedTime = 0;
+
     [SerializeField] private CustomRigidBody _rigidBody;
     [SerializeField] private Camera _mainCamera;
 
@@ -20,7 +22,7 @@ public class WhiteBall : MonoBehaviour
 
     [SerializeField] private AnimationCurve _curve;
 
-    public int MaxHitPower { get => _maxHitPower; }
+    public float MaxHoldTime { get => _maxHoldTime; }
 
     private void OnMouseDown()
     {
@@ -45,9 +47,13 @@ public class WhiteBall : MonoBehaviour
 
         _proccessedHitPower = _curve.Evaluate(_currentHitPower);
 
+        _currentHitPower = _elapsedTime * _maxHitPower;
+
         _movementVector = _direction * _currentHitPower;
 
-        Debug.Log("yes" + _movementVector);
+        _proccessedHitPower = _curve.Evaluate(_elapsedTime);
+        
+        
         _rigidBody.AddForce(_movementVector);
         //_rigidBody.AddForce(_movementVector);
         //_rigidBody.AddForceAtPosition(_movementVector, _mousePos);
@@ -69,31 +75,29 @@ public class WhiteBall : MonoBehaviour
                 _direction = transform.position - _mousePos;
 
                 _indicator.transform.right = _direction;
-
-
             }
            
 
             if (_isPoweringUp)
             {
-                _currentHitPower += 1;
+                _elapsedTime += Time.deltaTime;
 
-                if (_currentHitPower >= MaxHitPower)
+                if (_elapsedTime >= MaxHoldTime)
                 {
                     _isPoweringUp = false;
                 }
             }
             else
             {
-                _currentHitPower -= 1;
+                _elapsedTime -= Time.deltaTime;
 
-                if (_currentHitPower <= 0)
+                if (_elapsedTime <= 0)
                 {
                     _isPoweringUp = true;
                 }
             }
 
-            _indicator.FillSlider(_currentHitPower);
+            _indicator.FillSlider(_elapsedTime);
         }
 
 
@@ -109,6 +113,7 @@ public class WhiteBall : MonoBehaviour
         _indicator.ToggleSliderState(false);
         StopAllCoroutines();
         _currentHitPower = 0;
+        _elapsedTime = 0;
         _isPoweringUp = true;
 
     }
