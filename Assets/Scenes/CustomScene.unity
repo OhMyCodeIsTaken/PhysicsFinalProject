@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 49040208}
   - component: {fileID: 49040210}
-  - component: {fileID: 49040209}
   m_Layer: 0
   m_Name: BlueBall (4)
   m_TagString: Untagged
@@ -155,20 +154,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &49040209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49040207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &49040210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +177,6 @@ GameObject:
   m_Component:
   - component: {fileID: 68512079}
   - component: {fileID: 68512081}
-  - component: {fileID: 68512080}
   m_Layer: 0
   m_Name: BlueBall (5)
   m_TagString: Untagged
@@ -214,20 +198,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &68512080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68512078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &68512081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +221,6 @@ GameObject:
   m_Component:
   - component: {fileID: 104183435}
   - component: {fileID: 104183437}
-  - component: {fileID: 104183436}
   m_Layer: 0
   m_Name: BlueBall (7)
   m_TagString: Untagged
@@ -273,20 +242,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &104183436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104183434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &104183437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 138770446}
   - component: {fileID: 138770448}
-  - component: {fileID: 138770447}
   m_Layer: 0
   m_Name: BlueBall (12)
   m_TagString: Untagged
@@ -332,20 +286,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &138770447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138770445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &138770448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +309,6 @@ GameObject:
   m_Component:
   - component: {fileID: 154693519}
   - component: {fileID: 154693521}
-  - component: {fileID: 154693520}
   m_Layer: 0
   m_Name: BlueBall (9)
   m_TagString: Untagged
@@ -391,20 +330,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &154693520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154693518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &154693521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +353,6 @@ GameObject:
   m_Component:
   - component: {fileID: 155986107}
   - component: {fileID: 155986109}
-  - component: {fileID: 155986108}
   m_Layer: 0
   m_Name: BlueBall (13)
   m_TagString: Untagged
@@ -450,20 +374,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &155986108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155986106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &155986109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +397,6 @@ GameObject:
   m_Component:
   - component: {fileID: 257562812}
   - component: {fileID: 257562814}
-  - component: {fileID: 257562813}
   m_Layer: 0
   m_Name: BlueBall (9)
   m_TagString: Untagged
@@ -509,20 +418,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &257562813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257562811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &257562814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,7 +441,6 @@ GameObject:
   m_Component:
   - component: {fileID: 279007673}
   - component: {fileID: 279007675}
-  - component: {fileID: 279007674}
   m_Layer: 0
   m_Name: BlueBall (2)
   m_TagString: Untagged
@@ -568,20 +462,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &279007674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279007672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &279007675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +538,6 @@ GameObject:
   m_Component:
   - component: {fileID: 347537636}
   - component: {fileID: 347537638}
-  - component: {fileID: 347537637}
   m_Layer: 0
   m_Name: BlueBall (6)
   m_TagString: Untagged
@@ -680,20 +559,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &347537637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347537635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &347537638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,7 +759,6 @@ GameObject:
   m_Component:
   - component: {fileID: 383891753}
   - component: {fileID: 383891755}
-  - component: {fileID: 383891754}
   m_Layer: 0
   m_Name: BlueBall (3)
   m_TagString: Untagged
@@ -916,20 +780,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &383891754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383891752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &383891755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -953,7 +803,6 @@ GameObject:
   m_Component:
   - component: {fileID: 384023386}
   - component: {fileID: 384023388}
-  - component: {fileID: 384023387}
   m_Layer: 0
   m_Name: BlueBall (7)
   m_TagString: Untagged
@@ -975,20 +824,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &384023387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384023385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &384023388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,7 +847,6 @@ GameObject:
   m_Component:
   - component: {fileID: 390372992}
   - component: {fileID: 390372994}
-  - component: {fileID: 390372993}
   m_Layer: 0
   m_Name: BlueBall (13)
   m_TagString: Untagged
@@ -1034,20 +868,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &390372993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 390372991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &390372994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,7 +1015,6 @@ GameObject:
   m_Component:
   - component: {fileID: 450092262}
   - component: {fileID: 450092264}
-  - component: {fileID: 450092263}
   m_Layer: 0
   m_Name: BlueBall (10)
   m_TagString: Untagged
@@ -1217,20 +1036,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &450092263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450092261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &450092264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,7 +1059,6 @@ GameObject:
   m_Component:
   - component: {fileID: 458306532}
   - component: {fileID: 458306534}
-  - component: {fileID: 458306533}
   m_Layer: 0
   m_Name: BlueBall (1)
   m_TagString: Untagged
@@ -1276,20 +1080,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &458306533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458306531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &458306534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,7 +1216,6 @@ GameObject:
   m_Component:
   - component: {fileID: 555477352}
   - component: {fileID: 555477354}
-  - component: {fileID: 555477353}
   m_Layer: 0
   m_Name: BlueBall (4)
   m_TagString: Untagged
@@ -1448,20 +1237,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &555477353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555477351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &555477354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1260,6 @@ GameObject:
   m_Component:
   - component: {fileID: 561656554}
   - component: {fileID: 561656556}
-  - component: {fileID: 561656555}
   m_Layer: 0
   m_Name: BlueBall (2)
   m_TagString: Untagged
@@ -1507,20 +1281,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &561656555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561656553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &561656556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +1304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 601218300}
   - component: {fileID: 601218302}
-  - component: {fileID: 601218301}
   m_Layer: 0
   m_Name: BlueBall (11)
   m_TagString: Untagged
@@ -1566,20 +1325,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &601218301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601218299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &601218302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,7 +1348,6 @@ GameObject:
   m_Component:
   - component: {fileID: 633109716}
   - component: {fileID: 633109718}
-  - component: {fileID: 633109717}
   m_Layer: 0
   m_Name: BlueBall (1)
   m_TagString: Untagged
@@ -1625,20 +1369,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &633109717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633109715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &633109718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1528,6 @@ GameObject:
   m_Component:
   - component: {fileID: 720548139}
   - component: {fileID: 720548141}
-  - component: {fileID: 720548140}
   m_Layer: 0
   m_Name: BlueBall (14)
   m_TagString: Untagged
@@ -1820,20 +1549,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &720548140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720548138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &720548141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,7 +1605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 741852427}
   - component: {fileID: 741852429}
-  - component: {fileID: 741852428}
   m_Layer: 0
   m_Name: BlueBall (8)
   m_TagString: Untagged
@@ -1912,20 +1626,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &741852428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741852426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &741852429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,7 +1710,6 @@ GameObject:
   m_Component:
   - component: {fileID: 843709055}
   - component: {fileID: 843709057}
-  - component: {fileID: 843709056}
   m_Layer: 0
   m_Name: BlueBall (7)
   m_TagString: Untagged
@@ -2032,20 +1731,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &843709056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843709054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &843709057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2105,7 +1790,6 @@ GameObject:
   m_Component:
   - component: {fileID: 915833783}
   - component: {fileID: 915833785}
-  - component: {fileID: 915833784}
   m_Layer: 0
   m_Name: BlueBall (15)
   m_TagString: Untagged
@@ -2127,20 +1811,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &915833784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915833782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &915833785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,7 +1834,6 @@ GameObject:
   m_Component:
   - component: {fileID: 954515597}
   - component: {fileID: 954515599}
-  - component: {fileID: 954515598}
   m_Layer: 0
   m_Name: BlueBall (7)
   m_TagString: Untagged
@@ -2186,20 +1855,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954515598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954515596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &954515599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2395,7 +2050,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981366117}
   - component: {fileID: 981366119}
-  - component: {fileID: 981366118}
   m_Layer: 0
   m_Name: BlueBall (3)
   m_TagString: Untagged
@@ -2417,20 +2071,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981366118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981366116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &981366119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,7 +2094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981969844}
   - component: {fileID: 981969846}
-  - component: {fileID: 981969845}
   m_Layer: 0
   m_Name: BlueBall (1)
   m_TagString: Untagged
@@ -2476,20 +2115,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981969845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981969843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &981969846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2639,7 +2264,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1003556266}
   - component: {fileID: 1003556268}
-  - component: {fileID: 1003556267}
   m_Layer: 0
   m_Name: BlueBall (9)
   m_TagString: Untagged
@@ -2661,20 +2285,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1003556267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003556265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1003556268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2728,7 +2338,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1031230825}
   - component: {fileID: 1031230827}
-  - component: {fileID: 1031230826}
   m_Layer: 0
   m_Name: BlueBall (1)
   m_TagString: Untagged
@@ -2750,20 +2359,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1031230826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031230824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1031230827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,7 +2442,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1102193222}
   - component: {fileID: 1102193224}
-  - component: {fileID: 1102193223}
   m_Layer: 0
   m_Name: BlueBall (15)
   m_TagString: Untagged
@@ -2869,20 +2463,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1102193223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102193221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1102193224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,7 +2486,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1117020611}
   - component: {fileID: 1117020613}
-  - component: {fileID: 1117020612}
   m_Layer: 0
   m_Name: BlueBall (2)
   m_TagString: Untagged
@@ -2928,20 +2507,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1117020612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117020610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1117020613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,7 +2605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1204611933}
   - component: {fileID: 1204611935}
-  - component: {fileID: 1204611934}
   m_Layer: 0
   m_Name: BlueBall (11)
   m_TagString: Untagged
@@ -3062,20 +2626,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1204611934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204611932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1204611935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3099,7 +2649,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1209194721}
   - component: {fileID: 1209194723}
-  - component: {fileID: 1209194722}
   m_Layer: 0
   m_Name: BlueBall (6)
   m_TagString: Untagged
@@ -3121,20 +2670,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1209194722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209194720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1209194723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3194,7 +2729,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1234753234}
   - component: {fileID: 1234753236}
-  - component: {fileID: 1234753235}
   m_Layer: 0
   m_Name: BlueBall (5)
   m_TagString: Untagged
@@ -3216,20 +2750,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1234753235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234753233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1234753236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3253,7 +2773,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1285708672}
   - component: {fileID: 1285708674}
-  - component: {fileID: 1285708673}
   m_Layer: 0
   m_Name: BlueBall (8)
   m_TagString: Untagged
@@ -3275,20 +2794,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1285708673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285708671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1285708674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3408,7 +2913,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1360315494}
   - component: {fileID: 1360315496}
-  - component: {fileID: 1360315495}
   m_Layer: 0
   m_Name: BlueBall (3)
   m_TagString: Untagged
@@ -3430,20 +2934,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1360315495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360315493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1360315496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,7 +3020,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1521688924}
   - component: {fileID: 1521688926}
-  - component: {fileID: 1521688925}
   m_Layer: 0
   m_Name: BlueBall (2)
   m_TagString: Untagged
@@ -3552,20 +3041,6 @@ Transform:
   m_Father: {fileID: 325000699}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1521688925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521688923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1521688926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3589,7 +3064,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1559366945}
   - component: {fileID: 1559366947}
-  - component: {fileID: 1559366946}
   m_Layer: 0
   m_Name: BlueBall (10)
   m_TagString: Untagged
@@ -3611,20 +3085,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1559366946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559366944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1559366947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3648,7 +3108,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1646074420}
   - component: {fileID: 1646074422}
-  - component: {fileID: 1646074421}
   m_Layer: 0
   m_Name: BlueBall (8)
   m_TagString: Untagged
@@ -3670,20 +3129,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1646074421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646074419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1646074422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3878,7 +3323,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1654683242}
   - component: {fileID: 1654683244}
-  - component: {fileID: 1654683243}
   m_Layer: 0
   m_Name: BlueBall (9)
   m_TagString: Untagged
@@ -3900,20 +3344,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1654683243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654683241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1654683244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4171,7 +3601,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1756710285}
   - component: {fileID: 1756710287}
-  - component: {fileID: 1756710286}
   m_Layer: 0
   m_Name: BlueBall (3)
   m_TagString: Untagged
@@ -4193,20 +3622,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1756710286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756710284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1756710287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4262,7 +3677,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1905089691}
   - component: {fileID: 1905089693}
-  - component: {fileID: 1905089692}
   m_Layer: 0
   m_Name: BlueBall (4)
   m_TagString: Untagged
@@ -4284,20 +3698,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1905089692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905089690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1905089693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4321,7 +3721,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1942123919}
   - component: {fileID: 1942123921}
-  - component: {fileID: 1942123920}
   m_Layer: 0
   m_Name: BlueBall (8)
   m_TagString: Untagged
@@ -4343,20 +3742,6 @@ Transform:
   m_Father: {fileID: 1329788093}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1942123920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942123918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1942123921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4480,7 +3865,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1994739711}
   - component: {fileID: 1994739713}
-  - component: {fileID: 1994739712}
   m_Layer: 0
   m_Name: BlueBall (12)
   m_TagString: Untagged
@@ -4502,20 +3886,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1994739712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994739710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &1994739713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4539,7 +3909,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2062065518}
   - component: {fileID: 2062065520}
-  - component: {fileID: 2062065519}
   m_Layer: 0
   m_Name: BlueBall (4)
   m_TagString: Untagged
@@ -4561,20 +3930,6 @@ Transform:
   m_Father: {fileID: 693127617}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2062065519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062065517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &2062065520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,7 +4096,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2147174307}
   - component: {fileID: 2147174309}
-  - component: {fileID: 2147174308}
   m_Layer: 0
   m_Name: BlueBall (14)
   m_TagString: Untagged
@@ -4763,20 +4117,6 @@ Transform:
   m_Father: {fileID: 806528994}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2147174308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147174306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a5b6b83716da49a4b336de300f862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: 0, z: 0}
-  Mass: 1
 --- !u!114 &2147174309
 MonoBehaviour:
   m_ObjectHideFlags: 0
