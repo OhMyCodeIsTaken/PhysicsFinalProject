@@ -1,18 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Action<CustomCollider> OnCollisionWith;
 
-    // Update is called once per frame
-    void Update()
+
+    internal virtual void CollidesWith(CustomCollider otherCollider)
     {
-        
+        throw new NotImplementedException();
     }
 }
