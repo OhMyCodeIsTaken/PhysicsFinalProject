@@ -2,63 +2,72 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class WhiteBall : MonoBehaviour
+public class WhiteBall : Ball
 {
     [SerializeField] private HitIndicator _indicator;
     [SerializeField] private int _maxHitPower;
     [SerializeField] private float _currentHitPower = 0;
-    [SerializeField] private float _proccessedHitPower;
 
     [SerializeField] private float _maxHoldTime;
     [SerializeField] private float _elapsedTime = 0;
+    [SerializeField] private bool _currentlyInBallBounds;
 
     [SerializeField] private CustomRigidBody _rigidBody;
+    [SerializeField] private CustomCircleCollider2D _collider;
     [SerializeField] private Camera _mainCamera;
+    [SerializeField] private PlayBallsRespawnPoints _respawnPoints;
 
     private bool _isPoweringUp = true;
     private Vector3 _mousePos;
     private Vector2 _direction;
     private Vector2 _movementVector;
 
-    [SerializeField] private AnimationCurve _curve;
-
     public float MaxHoldTime { get => _maxHoldTime; }
+
+    private void Start()
+    {
+        _collider = GetComponent<CustomCircleCollider2D>();
+    }
 
     private void OnMouseDown()
     {
-        StopBallMotion();
-        _indicator.ToggleSliderState(true);
-        _indicator.transform.position = _mainCamera.WorldToScreenPoint(transform.position);
-        StartCoroutine(ChargeShot());
+        if(!GameManager.Instance.LockPlayerInput)
+        {
+            StopBallMotion();
+            _indicator.ToggleSliderState(true);
+            _indicator.transform.position = _mainCamera.WorldToScreenPoint(transform.position);
+            _currentlyInBallBounds = true;
+            StartCoroutine(ChargeShot());
+        }        
     }
 
     private void OnMouseExit()
     {
-        StopCharging();
-        ResetSettings();
+        if (!GameManager.Instance.LockPlayerInput)
+        {
+            StopCharging();
+            ResetSettings();
+        }
     }
 
     private void OnMouseUp()
     {
-        StopCharging();
+        if (!GameManager.Instance.LockPlayerInput && _currentlyInBallBounds)
+        {
+            StopCharging();
 
-        // Normalizing so that clicking closer/farther from ball center wont affect strike power
-        _direction.Normalize();
+            // Normalizing so that clicking closer/farther from ball center wont affect strike power
+            _direction.Normalize();
 
-        _proccessedHitPower = _curve.Evaluate(_currentHitPower);
+            _currentHitPower = _elapsedTime * _maxHitPower;
 
-        _currentHitPower = _elapsedTime * _maxHitPower;
+            _movementVector = _direction * _currentHitPower;
 
-        _movementVector = _direction * _currentHitPower;
+            _rigidBody.AddForce(_movementVector);
 
-        _proccessedHitPower = _curve.Evaluate(_elapsedTime);
-        
-        
-        _rigidBody.AddForce(_movementVector);
-        //_rigidBody.AddForce(_movementVector);
-        //_rigidBody.AddForceAtPosition(_movementVector, _mousePos);
-
-        ResetSettings();
+            GameManager.Instance.ExpendShot();
+            ResetSettings();   
+        }
     }
 
     private IEnumerator ChargeShot()
@@ -110,6 +119,7 @@ public class WhiteBall : MonoBehaviour
 
     private void ResetSettings()
     {
+        _currentlyInBallBounds = false;
         _indicator.ToggleSliderState(false);
         StopAllCoroutines();
         _currentHitPower = 0;
@@ -123,5 +133,9 @@ public class WhiteBall : MonoBehaviour
         _rigidBody.Velocity = Vector3.zero;
     }
 
-
+    public override void PocketBall()
+    {
+        GameManager.Instance.Score += Score;
+        _respawnPoints.RespawnBall(_collider);
+    }
 }

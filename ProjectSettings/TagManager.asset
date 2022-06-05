@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Play Ball
+  - Ball
   layers:
   - Default
   - TransparentFX

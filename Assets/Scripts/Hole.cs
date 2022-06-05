@@ -12,10 +12,10 @@ public class Hole : MonoBehaviour
 
     private void GainScore(CustomCollider collider)
     {
-        PlayBall ball = collider.gameObject.GetComponent<PlayBall>();
+        Ball ball = collider.gameObject.GetComponent<Ball>();
         if (ball)
         {
-            ball.GainScore();
+            ball.PocketBall();
         }
         
     }

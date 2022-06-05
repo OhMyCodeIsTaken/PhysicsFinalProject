@@ -19,13 +19,20 @@ public class CustomRigidBody : MonoBehaviour
 
     private void TransferVelocity(CustomCollider otherCollider)
     {
+        Vector3 otherDirection = (otherCollider.transform.position - transform.position).normalized;
+        Vector3 newVelocityToApply = 0.3f * Velocity.magnitude * otherDirection;
+
         CustomRigidBody otherRigidBody = otherCollider.GetComponent<CustomRigidBody>();
+
         if (otherRigidBody != null)
         {
-            Vector3 otherDirection = (otherRigidBody.transform.position - transform.position).normalized;
-            Vector3 newVelocityToApply = 0.3f * Velocity.magnitude * otherDirection;
+            
             otherRigidBody.Velocity += newVelocityToApply;
             Velocity -= newVelocityToApply;
+        }
+        else
+        {
+            Velocity = -newVelocityToApply;
         }
         
     }
@@ -33,7 +40,7 @@ public class CustomRigidBody : MonoBehaviour
     public void FixedUpdate()
     {
         Move();
-        ApplyDrag(CustomPhysics.AirFriction);
+        ApplyDrag(CustomPhysics.Instance.AirFriction);
     }
 
     public void AddForce(Vector3 force)
@@ -51,10 +58,12 @@ public class CustomRigidBody : MonoBehaviour
         if (Velocity != Vector3.zero)
         {
             Velocity -= Velocity.normalized * (friction * Time.deltaTime) / Mass;
-            if(Velocity.x <= 0.1f && Velocity.y <= 0.1f)
+
+            if (Velocity.magnitude <= 0.01f)
             {
-                //Velocity = Vector3.zero;
+                Velocity = Vector3.zero;
             }
+
             //if(Velocity < Vector3.zero)
             //{
             //    Velocity = Vector3.zero

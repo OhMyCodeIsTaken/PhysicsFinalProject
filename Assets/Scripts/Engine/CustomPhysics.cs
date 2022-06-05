@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomPhysics : MonoBehaviour
+public class CustomPhysics : Singleton<CustomPhysics>
 {
-    private static float _airFriction = 0.1f;
+    private float _airFriction = 0.1f;
 
-    public static float AirFriction { get => _airFriction; set => _airFriction = value; }
+    public float AirFriction { get => _airFriction; set => _airFriction = value; }
 
-    public static List<CustomCollider> Colliders = new List<CustomCollider>();
+    public List<CustomCollider> Colliders = new List<CustomCollider>();
 
     void FixedUpdate()
     {

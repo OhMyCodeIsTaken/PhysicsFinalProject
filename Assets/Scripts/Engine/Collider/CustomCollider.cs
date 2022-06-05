@@ -11,8 +11,8 @@ public class CustomCollider : MonoBehaviour
 
     public bool IsTrigger { get => _isTrigger; }
 
-    internal virtual void CollidesWith(CustomCollider otherCollider)
+    private void Awake()
     {
-        throw new NotImplementedException();
+        CustomPhysics.Instance.Colliders.Add(this);
     }
 }

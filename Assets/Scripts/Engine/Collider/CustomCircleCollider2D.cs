@@ -8,11 +8,6 @@ public class CustomCircleCollider2D : CustomCollider
 
     public float Raidus { get => _raidus; set => _raidus = value; }
 
-    private void Awake()
-    {
-        CustomPhysics.Colliders.Add(this);
-    }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
