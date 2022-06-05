@@ -20,13 +20,17 @@ public class CustomRigidBody : MonoBehaviour
     private void TransferVelocity(CustomCollider otherCollider)
     {
         Vector3 otherDirection = (otherCollider.transform.position - transform.position).normalized;
+
+        Vector3 oldVelocity = Velocity;
+        Vector3 otherOldVelocity;
+
         Vector3 newVelocityToApply = 0.3f * Velocity.magnitude * otherDirection;
 
         CustomRigidBody otherRigidBody = otherCollider.GetComponent<CustomRigidBody>();
 
         if (otherRigidBody != null)
         {
-            
+            otherOldVelocity = otherRigidBody.Velocity;
             otherRigidBody.Velocity += newVelocityToApply;
             Velocity -= newVelocityToApply;
         }

@@ -18,6 +18,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private int _numberOfShotsLeft;
     [SerializeField] private Text _numberOfShotsLeftUI;
 
+    [SerializeField] private Text _levelUI;
+
     public int Score 
     { 
         get => _score;
@@ -48,6 +50,7 @@ public class GameManager : Singleton<GameManager>
     {
         Score = 0;
         NumberOfShotsLeft = NumberOfShotsLeft;
+        _levelUI.text = (SceneManager.GetActiveScene().buildIndex + 1).ToString();
     }
 
     internal void ExpendShot()
