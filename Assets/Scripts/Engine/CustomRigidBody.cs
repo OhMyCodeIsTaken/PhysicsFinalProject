@@ -14,15 +14,12 @@ public class CustomRigidBody : MonoBehaviour
     private void Start()
     {
         _collider = GetComponent<CustomCollider>();
-        _collider.OnCollisionWith += TransferVelocity;
+        _collider.OnCollisionWith += TransferArbitraryMomentum;
     }
 
-    private void TransferVelocity(CustomCollider otherCollider)
+    private void TransferArbitraryMomentum(CustomCollider otherCollider)
     {
         Vector3 otherDirection = (otherCollider.transform.position - transform.position).normalized;
-
-        Vector3 oldVelocity = Velocity;
-        Vector3 otherOldVelocity;
 
         Vector3 newVelocityToApply = 0.3f * Velocity.magnitude * otherDirection;
 
@@ -30,7 +27,6 @@ public class CustomRigidBody : MonoBehaviour
 
         if (otherRigidBody != null)
         {
-            otherOldVelocity = otherRigidBody.Velocity;
             otherRigidBody.Velocity += newVelocityToApply;
             Velocity -= newVelocityToApply;
         }
@@ -39,6 +35,31 @@ public class CustomRigidBody : MonoBehaviour
             Velocity = -newVelocityToApply;
         }
         
+    }
+
+    private void TransferMomentum(CustomCollider otherCollider)
+    {
+        Vector3 otherDirection = (otherCollider.transform.position - transform.position).normalized;
+        CustomRigidBody otherRigidBody = otherCollider.GetComponent<CustomRigidBody>();
+
+        if (otherRigidBody != null)
+        {
+            Vector3 oldVelocity = Velocity;
+            Vector3 otherOldVelocity = otherRigidBody.Velocity;
+
+            Velocity = CalculateNewVelocities(oldVelocity, otherOldVelocity, Mass, otherRigidBody.Mass);
+            otherRigidBody.Velocity = CalculateNewVelocities(otherOldVelocity, oldVelocity, otherRigidBody.Mass, Mass);
+        }
+        else
+        {
+            Velocity = -Velocity.magnitude * otherDirection;
+        }
+    }
+
+    private Vector3 CalculateNewVelocities(Vector3 oldVelocity1, Vector3 oldVelocity2, float mass1, float mass2)
+    {
+        Vector3 newVelocity = ((mass1 - mass2) / (mass1 + mass2)) * oldVelocity1 + ((2 * mass2) / (mass1 + mass2)) * oldVelocity2;
+        return newVelocity;
     }
 
     public void FixedUpdate()
