@@ -59,15 +59,10 @@ public class CustomRigidBody : MonoBehaviour
         {
             Velocity -= Velocity.normalized * (friction * Time.deltaTime) / Mass;
 
-            if (Velocity.magnitude <= 0.01f)
+            if (Velocity.magnitude <= 0.01f) // Once the velocity is negligible and is close to zero, reset it to zero
             {
                 Velocity = Vector3.zero;
             }
-
-            //if(Velocity < Vector3.zero)
-            //{
-            //    Velocity = Vector3.zero
-            //}
         }
     }
 
