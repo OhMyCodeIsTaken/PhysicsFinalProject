@@ -13,7 +13,10 @@ public class CustomRigidBody : MonoBehaviour
 
     private void Start()
     {
+        
         _collider = GetComponent<CustomCollider>();
+        /* When this rigid body collides with another object with a collider, it will transfer some momentum to the other object
+          (if that object also has a rigidbody */
         _collider.OnCollisionWith += TransferArbitraryMomentum;
     }
 
@@ -82,7 +85,10 @@ public class CustomRigidBody : MonoBehaviour
     {
         if (Velocity != Vector3.zero)
         {
-            Velocity -= Velocity.normalized * (friction * Time.deltaTime) / Mass;
+            // Lose a portion of the Velocity, with direction equal to to the original Velocity* and the magnitude being dependant on the friction "size"
+            /* *Note: The direction of the Velocity is the same, but when you subtract the new Vector it effectively means velocity loses "speed" in the direction
+             OPPOSITE to itself. */
+            Velocity -= Velocity.normalized * (friction * Time.deltaTime) / Mass;  
 
             if (Velocity.magnitude <= 0.01f) // Once the velocity is negligible and is close to zero, reset it to zero
             {

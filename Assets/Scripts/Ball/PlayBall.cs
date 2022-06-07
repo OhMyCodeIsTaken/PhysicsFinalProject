@@ -14,6 +14,7 @@ public class PlayBall : Ball
     }
     public override void PocketBall()
     {
+        // When a PlayBall is "deposited", add it's score to the player's score and turn off the PlayBall
         GameManager.Instance.Score += Score;
         gameObject.SetActive(false);
     }

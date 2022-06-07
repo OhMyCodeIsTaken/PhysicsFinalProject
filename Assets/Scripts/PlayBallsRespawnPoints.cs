@@ -32,5 +32,9 @@ public class PlayBallsRespawnPoints : MonoBehaviour
                 colliderRigidBody.AddForce(new Vector3(3, 0, 0));
             }
         }
+
+        
+
     }
+
 }

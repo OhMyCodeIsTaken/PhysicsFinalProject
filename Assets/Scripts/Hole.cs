@@ -6,10 +6,11 @@ public class Hole : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<CustomCollider>().OnCollisionWith += GainScore;
+        GetComponent<CustomCollider>().OnCollisionWith += DepositBallInHole;
     }
 
-    private void GainScore(CustomCollider collider)
+    // This function will be called when a ball collides with a hole, which will call the ball's PocketBall function. 
+    private void DepositBallInHole(CustomCollider collider)
     {
         Ball ball = collider.gameObject.GetComponent<Ball>();
         if (ball)

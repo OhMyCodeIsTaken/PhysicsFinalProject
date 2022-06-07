@@ -58,18 +58,20 @@ public class GameManager : Singleton<GameManager>
         NumberOfShotsLeft--;
         if(NumberOfShotsLeft <= 0)
         {
-            Lose();
+            LockPlayerInputs(); 
         }
     }
 
-    private void Lose()
+    private void LockPlayerInputs()
     {
+        // If the player has no more shots left/they won, they can't play anymore and can only press the UI buttons.
+        // (retry, quit, or NextLevel if they have sufficient score).
         _lockPlayerInput = true;
     }
 
     private void Win()
     {
-        _lockPlayerInput = true;
+        LockPlayerInputs();
         _nextLevelButton.SetActive(true);
     }
 
