@@ -17,7 +17,7 @@ public class CustomRigidBody : MonoBehaviour
         _collider = GetComponent<CustomCollider>();
         /* When this rigid body collides with another object with a collider, it will transfer some momentum to the other object
           (if that object also has a rigidbody */
-        _collider.OnCollisionWith += TransferArbitraryMomentum;
+        _collider.OnCollisionWith += TransferMomentum;
     }
 
     private void TransferArbitraryMomentum(CustomCollider otherCollider)
@@ -44,6 +44,8 @@ public class CustomRigidBody : MonoBehaviour
     {
         Vector3 otherDirection = (otherCollider.transform.position - transform.position).normalized;
         CustomRigidBody otherRigidBody = otherCollider.GetComponent<CustomRigidBody>();
+
+        Debug.Log("called");
 
         if (otherRigidBody != null)
         {

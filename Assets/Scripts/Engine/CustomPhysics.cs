@@ -14,9 +14,12 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
     void FixedUpdate()
     {
+
+        
+
         foreach (CustomCollider collider in Colliders)
         {
-            if (collider.gameObject.activeSelf) // Skip collision check if the gameObject is turned off
+            if (collider.gameObject.activeSelf && collider.Touched == false) // Skip collision check if the gameObject is turned off
             {
                 foreach (CustomCollider otherCollider in Colliders)
                 {
@@ -28,6 +31,7 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
                     if (CollisionCheck(collider, otherCollider)) // Check if collider and otherCollider are colliding
                     {
+                        collider.Touched = true;
                         collider.OnCollisionWith?.Invoke(otherCollider);    // Resolve collision according to the collision behavior that's added to collider
                     }
                 }

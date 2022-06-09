@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Blue PlayBall
       objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
 --- !u!4 &37808911 stripped
@@ -1242,6 +1246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black PlayBall
       objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
 --- !u!4 &348298747 stripped
@@ -1463,6 +1471,10 @@ PrefabInstance:
     - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
       propertyPath: m_Name
       value: Yellow PlayBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
@@ -3845,6 +3857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cyan PlayBall
       objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
 --- !u!4 &989654851 stripped
@@ -4381,6 +4397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple PlayBall
       objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
 --- !u!4 &1178344308 stripped
@@ -4819,6 +4839,10 @@ PrefabInstance:
     - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
       propertyPath: m_Name
       value: Orange PlayBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
@@ -5942,9 +5966,9 @@ MonoBehaviour:
   _maxHoldTime: 1
   _elapsedTime: 0
   _currentlyInBallBounds: 0
+  _mainCamera: {fileID: 519420031}
   _rigidBody: {fileID: 1648189936}
   _collider: {fileID: 0}
-  _mainCamera: {fileID: 519420031}
   _respawnPoints: {fileID: 400248520}
 --- !u!212 &1648189933
 SpriteRenderer:
@@ -6367,6 +6391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pink PlayBall
       objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
 --- !u!4 &1762962688 stripped
@@ -6436,6 +6464,10 @@ PrefabInstance:
     - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
       propertyPath: m_Name
       value: Red PlayBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
@@ -6711,6 +6743,10 @@ PrefabInstance:
     - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
       propertyPath: m_Name
       value: Brown PlayBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
@@ -7416,6 +7452,10 @@ PrefabInstance:
     - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
       propertyPath: m_Name
       value: Blue PlayBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990725262829615501, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb8ac3442c763346960fd0dddd29b00, type: 3}

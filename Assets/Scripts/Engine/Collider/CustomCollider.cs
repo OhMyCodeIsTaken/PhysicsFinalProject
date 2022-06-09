@@ -10,6 +10,9 @@ public class CustomCollider : MonoBehaviour
     public Action<CustomCollider> OnCollisionWith;
 
     public bool IsTrigger { get => _isTrigger; }
+    public bool Touched { get => _touched; set => _touched = value; }
+
+    private bool _touched = false;
 
     private void Awake()
     {
