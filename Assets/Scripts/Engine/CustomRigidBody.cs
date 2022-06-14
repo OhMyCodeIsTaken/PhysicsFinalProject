@@ -46,7 +46,8 @@ public class CustomRigidBody : MonoBehaviour
             // Lose a portion of the Velocity, with direction equal to to the original Velocity* and the magnitude being dependant on the friction "size"
             /* *Note: The direction of the Velocity is the same, but when you subtract the new Vector it effectively means velocity loses "speed" in the direction
              OPPOSITE to itself. */
-            Velocity -= Velocity.normalized * (friction * Time.deltaTime) / Mass;  
+            Vector3 drag = -1 * Velocity.normalized * (friction * Time.deltaTime) / Mass;
+            Velocity += drag;
 
             if (Velocity.magnitude <= 0.01f) // Once the velocity is negligible and is close to zero, reset it to zero
             {
@@ -83,8 +84,7 @@ public class CustomRigidBody : MonoBehaviour
 
         if (otherRigidBody != null)
         {
-            Debug.Log("2");
-            InitOldVelocitiesOnMomentumTransfer(otherRigidBody);
+            InitOriginalValuesOnMomentumTransfer(otherRigidBody);
 
             Velocity = CalculateNewVelocities2D(OldVelocity, otherRigidBody.OldVelocity, OldPosition, otherRigidBody.OldPosition, Mass, otherRigidBody.Mass);
         }
@@ -103,12 +103,11 @@ public class CustomRigidBody : MonoBehaviour
         return newVelocity;
     }
 
-    private void InitOldVelocitiesOnMomentumTransfer(CustomRigidBody otherRigidBody)
+    private void InitOriginalValuesOnMomentumTransfer(CustomRigidBody otherRigidBody)
     {
         if (Collider.CollisionOnlyRegisteredOnce(otherRigidBody.Collider))
         {
             // Only runs on the first CollisionCheck of the two colliders
-            Debug.Log("1");
             OldVelocity = Velocity;
             otherRigidBody.OldVelocity = otherRigidBody.Velocity;
 

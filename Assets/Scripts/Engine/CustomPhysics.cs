@@ -33,7 +33,6 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
                     if (CollisionCheck(collider, otherCollider)) // Check if collider and otherCollider are colliding
                     {
-                        Debug.Log("pls");
                         collider.CachedColliders.Add(otherCollider);
                         collider.OnCollisionWith?.Invoke(otherCollider);    // Resolve collision according to the collision behavior that's added to collider
                     }

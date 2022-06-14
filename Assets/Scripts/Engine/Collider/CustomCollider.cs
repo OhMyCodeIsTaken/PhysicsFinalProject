@@ -22,7 +22,8 @@ public class CustomCollider : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if a collision between two CustomColliders occured and that only the first one's OnColissionWith event was triggered. This can be used to run a function only once when two colliders collide
+    /// Checks if a collision between two CustomColliders occured and that only the first one's OnColissionWith event was triggered. 
+    /// This can be used to run a function only once when two colliders collide
     /// </summary>
     /// <param name="customCollider"></param>
     /// <returns></returns>
