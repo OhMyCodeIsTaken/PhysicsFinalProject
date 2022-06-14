@@ -14,8 +14,9 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
     void FixedUpdate()
     {
-        foreach (CustomCollider collider in Colliders)
+        foreach (CustomCollider collider in Colliders)  
         {
+            // Clean all recorded cached colliders from the previous frame
             collider.CachedColliders.Clear();
         }        
 
@@ -33,7 +34,7 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
                     if (CollisionCheck(collider, otherCollider)) // Check if collider and otherCollider are colliding
                     {
-                        collider.CachedColliders.Add(otherCollider);
+                        collider.CachedColliders.Add(otherCollider);    // Record which colliders collider collided with this frame.
                         collider.OnCollisionWith?.Invoke(otherCollider);    // Resolve collision according to the collision behavior that's added to collider
                     }
                 }
