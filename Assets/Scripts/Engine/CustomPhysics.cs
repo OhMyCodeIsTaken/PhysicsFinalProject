@@ -14,12 +14,14 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
     void FixedUpdate()
     {
-
-        
+        foreach (CustomCollider collider in Colliders)
+        {
+            collider.CachedColliders.Clear();
+        }        
 
         foreach (CustomCollider collider in Colliders)
         {
-            if (collider.gameObject.activeSelf && collider.Touched == false) // Skip collision check if the gameObject is turned off
+            if (collider.gameObject.activeSelf) // Skip collision check if the gameObject is turned off
             {
                 foreach (CustomCollider otherCollider in Colliders)
                 {
@@ -31,7 +33,8 @@ public class CustomPhysics : Singleton<CustomPhysics>
 
                     if (CollisionCheck(collider, otherCollider)) // Check if collider and otherCollider are colliding
                     {
-                        collider.Touched = true;
+                        Debug.Log("pls");
+                        collider.CachedColliders.Add(otherCollider);
                         collider.OnCollisionWith?.Invoke(otherCollider);    // Resolve collision according to the collision behavior that's added to collider
                     }
                 }
@@ -59,7 +62,7 @@ public class CustomPhysics : Singleton<CustomPhysics>
         Vector2 distance = collider.transform.position - otherCollider.transform.position;
 
         // Collision occurs if the distance is smaller or equal to the sum of both cricle's radius.
-        if (distance.magnitude <= collider.Raidus + otherCollider.Raidus)
+        if (distance.magnitude <= collider.Radius + otherCollider.Radius)
         {
             return true;
         }
