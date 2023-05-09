@@ -18,7 +18,7 @@ public class ResetPlayBallPosition : MonoBehaviour
         foreach (var child in _children)
         {
             // This exists because of a bug where a ball gets stuck between two balls that are used as bounds
-            child.OnCollisionWith += _playBallsRespawnPoints.RespawnBall;
+            //child.OnCollisionWith += _playBallsRespawnPoints.RespawnBall;
         }
     }
 }
