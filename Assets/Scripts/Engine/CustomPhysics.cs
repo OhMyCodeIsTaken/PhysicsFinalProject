@@ -26,7 +26,7 @@ public class CustomPhysics : Singleton<CustomPhysics>
             {
                 foreach (CustomCollider otherCollider in Colliders)
                 {
-                    if (collider == otherCollider || !otherCollider.gameObject.activeSelf)
+                    if ( CompareColliders(collider, otherCollider) || !otherCollider.gameObject.activeSelf)
                     {
                         // Skip this iteration if the collider is "colliding with itself" OR if the other gameObject is turned off
                         continue;
@@ -59,14 +59,19 @@ public class CustomPhysics : Singleton<CustomPhysics>
     private static bool CirclesCollisionCheck(CustomCircleCollider2D collider, CustomCircleCollider2D otherCollider)
     {
         // Calculate the distance between the objects
-        Vector2 distance = collider.transform.position - otherCollider.transform.position;
+        float distance = (collider.transform.position - otherCollider.transform.position).magnitude;
 
         // Collision occurs if the distance is smaller or equal to the sum of both cricle's radius.
-        if (distance.magnitude <= collider.Radius + otherCollider.Radius)
+        if (distance <= collider.Radius + otherCollider.Radius)
         {
             return true;
         }
 
         return false;
+    }
+
+    private bool CompareColliders(CustomCollider collider, CustomCollider otherCollider)
+    {
+        return ReferenceEquals(collider, otherCollider);
     }
 }
