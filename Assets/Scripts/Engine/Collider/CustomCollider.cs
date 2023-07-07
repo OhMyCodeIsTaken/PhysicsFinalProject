@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomCollider : MonoBehaviour
+public class CustomCollider : NewMonoBehavior
 {
     [SerializeField] private bool _isTrigger;
 
@@ -16,7 +16,7 @@ public class CustomCollider : MonoBehaviour
 
     private bool _touched = false;
 
-    private void Awake()
+    protected override void NewAwake()
     {
         CustomPhysics.Instance.Colliders.Add(this);
     }

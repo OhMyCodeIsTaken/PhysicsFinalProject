@@ -12,19 +12,23 @@ public class CustomPhysics : Singleton<CustomPhysics>
     // This is the list of all colliders in the scene. The engine will use this list to check and resolve collisions that occur in the scene.
     public List<CustomCollider> Colliders = new List<CustomCollider>();
 
+    private CustomCollider[] collidersArray;
+
     void FixedUpdate()
     {
-        foreach (CustomCollider collider in Colliders)  
+        collidersArray = Colliders.ToArray();
+
+        foreach (CustomCollider collider in collidersArray)  
         {
             // Clean all recorded cached colliders from the previous frame
             collider.CachedColliders.Clear();
         }        
 
-        foreach (CustomCollider collider in Colliders)
+        foreach (CustomCollider collider in collidersArray)
         {
             if (collider.gameObject.activeSelf) // Skip collision check if the gameObject is turned off
             {
-                foreach (CustomCollider otherCollider in Colliders)
+                foreach (CustomCollider otherCollider in collidersArray)
                 {
                     if ( CompareColliders(collider, otherCollider) || !otherCollider.gameObject.activeSelf)
                     {
