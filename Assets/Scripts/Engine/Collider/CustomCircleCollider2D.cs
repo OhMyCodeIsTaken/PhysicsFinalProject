@@ -10,8 +10,12 @@ public class CustomCircleCollider2D : CustomCollider
 
     private void OnDrawGizmos()
     {
-        // Shows the Collider bounds and radius in editor mode
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, Radius);
+        if(transform)
+        {
+            // Shows the Collider bounds and radius in editor mode
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, Radius);
+        }
+        
     }
 }
